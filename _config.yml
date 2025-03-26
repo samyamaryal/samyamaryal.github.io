@@ -29,8 +29,17 @@ github_username:  samyamaryal
 # Build settings
 
 # This theme is causing an annoying 'Subscribe via RSS' message to appear on the home page.
-theme: al-folio
-#plugins:
+theme: minima
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  # Add more pages here as needed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
