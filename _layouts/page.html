@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<head>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+</head>
+<nav class="navbar">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/posts/">Posts</a></li>
+  </ul>
+</nav>
+
+{% include breadcrumbs.html %}
+
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  <header class="page__header">
+    <h1 class="page__title" itemprop="headline">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+      <p class="page__subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <div class="page__content" itemprop="text">
+    {{ content }}
+  </div>
+
+  {% if page.share %}
+    {% include share.html %}
+  {% endif %}
+
+  {% if page.comments %}
+    {% include comments.html %}
+  {% endif %}
+</article>
