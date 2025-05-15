@@ -23,7 +23,7 @@ email: samyam.aryal01@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
     Building ... 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: samyamaryal.github.io"" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://samyamaryal.github.io"" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  samyamaryal
 
 # Build settings
@@ -32,8 +32,9 @@ github_username:  samyamaryal
 # theme: pages-themes/midnight@v0.2.0
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
 
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 
 navigation:
   - title: "Home"
