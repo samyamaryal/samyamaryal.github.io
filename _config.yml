@@ -33,7 +33,7 @@ github_username:  samyamaryal
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
-  -jekyll-include-cache
+  - jekyll-include-cache
 
 remote_theme: mmistakes/minimal-mistakes
 
