@@ -37,17 +37,9 @@ plugins:
 
 remote_theme: mmistakes/minimal-mistakes
 
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "About"
-    url: "/about/"
-  - title: "Posts"
-    url: "/posts/"
-
-
-  # Add more pages here as needed
-
+# Main nav links live in _data/navigation.yml (that's what the theme's
+# masthead actually reads — this file's own `navigation:` key is not used
+# by minimal-mistakes).
 
 # Exclude from processing.
 # The following items will not be processed, by default.
