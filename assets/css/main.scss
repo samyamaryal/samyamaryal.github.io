@@ -1,0 +1,14 @@
+---
+search: false
+---
+
+@charset "utf-8";
+
+// Custom overrides — variables use `!default` in the theme, so declaring
+// them here before the imports below takes precedence without touching
+// any theme files.
+$primary-color: #8b5cf6; // violet accent instead of the stock dark-skin teal
+$header-font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

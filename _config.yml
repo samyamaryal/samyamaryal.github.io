@@ -36,6 +36,7 @@ plugins:
   - jekyll-include-cache
 
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dark"
 
 # Main nav links live in _data/navigation.yml (that's what the theme's
 # masthead actually reads — this file's own `navigation:` key is not used
